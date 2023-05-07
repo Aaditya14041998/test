@@ -1,0 +1,22 @@
+<html>
+     <head>
+          <title>Get Day of Week from Date</title>
+<script>
+     function f1() {
+          let inputDate = document.getElementById("i1").value
+          let mydate = new Date(inputDate)
+          let DayOfWeek = mydate.getDay();
+          let weekdays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+          let weekdayInWords = weekdays[DayOfWeek]
+          document.getElementById("output").innerHTML = weekdayInWords
+     }
+</script>
+</head>
+
+<body>
+     <h1> Get Day of week fom Date</h1>
+     <p> ENTER THE DATE:<input type="date" id="i1" onchange="f1()" ></p>
+     <p id="output">day is :</p>
+</body>
+
+</html>
